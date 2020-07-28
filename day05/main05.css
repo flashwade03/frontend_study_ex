@@ -1,0 +1,10 @@
+ul {
+  font-size: 40px;
+}
+
+ul li::before {
+  content: " ";
+  font-size: bold;
+  color: red;
+  margin-right:20px;
+}

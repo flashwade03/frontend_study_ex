@@ -1,0 +1,38 @@
+div {
+  color: red !important; /*가장 중요*/
+}
+
+#color_yellow {
+  color: yellow; /* 아이디 선택자 */
+}
+
+.color_green {
+  color: green; /* 클래스 선택자 */
+}
+
+div {
+  color: blue; /* 태그 선택자 */
+}
+
+* {
+  color: darkblue; /* 전체 선택자 */
+}
+
+body {
+  color: violet; /*상속*/
+}
+
+/* 우선순위 결정
+1. 명시도 점수가 높은 선언이 우선
+2. 점수가 같은 경우, 가장 마지막에 해석(늦게 작성한)되는 선언이 우선(선언 순서)
+3. 명시도는 '상속'규칙보다 우선(중요도)
+4. !important가 적용된 선언 방식이 다른 모든 방식보다 우선(중요도)
+
+1. !important point: infinity
+2. inline point: 1000pt
+3. 아이디 선택자 point: 100pt
+4. 클래스 선택자 point: 10pt
+5. 태그 선택자 point: 1pt
+6. 전체 선택자 point: 0pt
+7. 상속 point: -1pt
+*/

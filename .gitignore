@@ -1,3 +1,6 @@
+#MAC Specify
+*.DS_Store
+
 # Logs
 logs
 *.log
